@@ -1,23 +1,145 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
+# Arquivos temporários
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+Thumbs.db
 
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Dependências locais do Electron
+node_modules/electron/
+node_modules/electron-builder/
+
+# Arquivos de compilação
+out/
+dist/
+build/
+*.dmg
+*.exe
+*.AppImage
+*.deb
+*.rpm
+*.msi
+
+# Arquivos de configuração locais
+.env
+.env.local
+.env.*.local
+
+# Logs e saída de depuração
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Arquivos de backup
+*.bak
+*.swp
+*~
+
+# Arquivos de configuração de IDEs
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sublime-workspace
+*.sublime-project
+
+# Cache e diretórios temporários
+Desktop.ini
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+$RECYCLE.BIN/
+*.tmp
+*.log
+*.jade
+*.pug
+*.html~
+*.part
+node_modules/
+bower_components/
+.sass-cache/
+.npm/
+.lock-wscript
+.vendor/
+npm-debug.log
+yarn-error.log
+/test/tmp
+/public/hot
+/node_modules
+/dist
+/build/Release
+/docs/gen
+/coverage
+.vscode
+npm-debug.log
+yarn-error.log
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.komodotools
+.komodotools/
+komodo-ide/
+komodo-edit/
+*.komodoproject
+.komodotools
+.komodotools/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw??
+[Tt]humbs.db
+*.db
+*.log
+*.sqlite
+*.sqlite3
+*.pdb
+*.idb
+*.uds
+*.pidb
+*.pdm
+*.mdf
+*.ldb
+*.sdf
+*.dbmdl
+*.dbproj
+*.bak
+*.bak.*
+*.xlog
+*.xlog.*
+*.log.*
+*.sql
+*.sql.*
+*.mdf.*
+*.ldf.*
+*.ndf.*
+*.ldf
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*.tmp
+*.log*
+*.tmp*
+*.bak*
+*.cache
+*.log
+*.swp
+*.backup
+*.DS_Store
+desktop.ini
+.DS_Store?
+*.db
+*.sqlite
+*.db-journal
