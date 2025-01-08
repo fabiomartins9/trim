@@ -17,6 +17,7 @@ node_modules/electron-builder/
 out/
 dist/
 build/
+Trim-win32-x64/
 *.dmg
 *.exe
 *.AppImage

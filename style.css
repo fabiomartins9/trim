@@ -24,4 +24,17 @@
     button:hover {
       background-color: #45a049;
     }
+
+    #limpar-button{
+      padding: 10px;
+      font-size: 16px;
+      background-color: #c2161e;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #limpar-button:hover {
+      background-color: #af5256;
+    }
   

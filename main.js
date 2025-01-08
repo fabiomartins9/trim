@@ -38,7 +38,7 @@ app.on('activate', function () {
 });
 
 ipcMain.on('removeSpaces', (event, text) => {
-  const result = text.replace(/\s/g, '');
+  const result = text.replace(/[^a-zA-Z0-9]/g, ''); // Remove tudo que não é letra ou número
   event.reply('removedSpaces', result);
 });
 

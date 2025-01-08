@@ -1,12 +1,39 @@
 {
-    "name": "RemoveSpacesApp",
-    "version": "1.0.0",
+    "name": "Trim",
+    "version": "1.0.1",
+    "description": "Um aplicativo Electron para remover espaços de texto e caracteres especiais.",
     "main": "main.js",
+    "author": "Seu Nome",
     "scripts": {
-        "start": "electron ."
+      "start": "electron .",
+      "dist": "electron-builder"
+    },
+    "build": {
+      "appId": "com.seuapp.trim",
+      "productName": "Trim",
+      "files": ["**/*"],
+      "directories": {
+        "output": "dist"
+      },
+      "win": {
+        "target": "nsis",
+        "icon": "path/to/your-icon.ico"
+      },
+      "mac": {
+        "target": "dmg",
+        "icon": "path/to/your-icon.icns"
+      },
+      "linux": {
+        "target": ["AppImage", "deb"],
+        "icon": "path/to/your-icon.png"
+      }
     },
     "dependencies": {
-        "electron": "^16.0.0",
-        "electron-notification": "^1.0.0"
+      "electron-notification": "^1.0.0"
+    },
+    "devDependencies": {
+      "electron": "^16.0.0",
+      "electron-builder": "^25.1.8"
     }
-}
+  }
+  
